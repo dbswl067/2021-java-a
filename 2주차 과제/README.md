@@ -131,6 +131,9 @@ JVM 역할은 자바 애플리케이션을 클래스 로더를 통해 읽어 들
 JVM들은 내부적으로 해당 메서드가 얼마나 자주 수행되는지 체크하고, 일정 정도를 넘을 때에만 컴파일을 수행한다.
 
 ## 2-6. JVM 구성 요소
+
+![](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F25616D45576B854C3F)
+
 ### Class Loader
 JVM내로 클래스(.class파일)을 로드하고, 링크를 통해 배치하는 작업을 수행하는 모듈이다.
 Runtime 시에 동적으로 클래스를 로드한다. jar 파일 내 저장된 클래스들을 JVM 위에 탑재하고 
