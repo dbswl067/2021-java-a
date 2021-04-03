@@ -18,4 +18,11 @@ public class Cars {
         }
         return cars;
     }
+
+    public Winner winner() {
+        return new Winner(cars ,cars.stream()
+            .mapToInt(Car::getPosition)
+            .max()
+            .getAsInt());
+    }
 }

@@ -15,5 +15,7 @@ public class Game {
             ResultView.printResultPosition(cars.run());
             System.out.println();
         }
+
+        ResultView.printWinners(cars.winner());
     }
 }

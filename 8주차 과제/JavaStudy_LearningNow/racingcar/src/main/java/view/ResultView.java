@@ -1,6 +1,7 @@
 package view;
 
 import racingcar.Car;
+import racingcar.Winner;
 
 import java.util.List;
 
@@ -24,5 +25,9 @@ public class ResultView {
             System.out.print(Bar);
         }
         System.out.println();
+    }
+
+    public static void printWinners(Winner winner) {
+        System.out.println("최종 우승자: "  + winner.getWinnersName());
     }
 }
