@@ -1,17 +1,21 @@
 package racingcar;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Cars {
     private List<Car> cars;
 
-    public Cars(List<Car> cars){
-        validate(cars);
-        this.cars = new ArrayList<>(cars);
+    public Cars(List<String> carNames) {
+        this.cars = carNames.stream()
+            .map(Car::new)
+            .collect(Collectors.toList());
     }
 
-    private void validate(List<Car> cars){
-
+    public List<Car> run() {
+        for (Car car: cars) {
+            car.move();
+        }
+        return cars;
     }
 }
